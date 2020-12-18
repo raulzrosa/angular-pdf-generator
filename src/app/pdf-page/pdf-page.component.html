@@ -1,0 +1,17 @@
+<div style="margin: 0 100px;">
+  <h1>{{title}}</h1>  
+  <table>
+    <tr>
+      <th>Nome</th>
+      <th>Imagem</th>
+      <th>Marca</th>
+      <th>Preço</th>
+    </tr>
+    <tr *ngFor="let car of priceList">
+      <td>{{car.name}}</td>
+      <td><a [href]="car.image">Foto</a></td>
+      <td>{{car.brand}}</td>
+      <td>{{car.price | currency}}</td>
+    </tr>
+  </table>
+</div>
